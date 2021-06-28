@@ -94,6 +94,7 @@ install:
 	cp -p ${STYLE-PATH}unified-biblatex.sty          styles/
 	cp -p ${STYLE-PATH}unified-biblatex/stmue-langsci-unified.bbx styles/
 	cp -p ${STYLE-PATH}unified-biblatex/stmue-langsci-unified.cbx styles/
+	cp -p ${STYLE-PATH}biblatex-series-number-checks.sty styles/
 	cp -p ${STYLE-PATH}Ling/article-ex.sty           styles/
 	cp -p ${STYLE-PATH}Ling/merkmalstruktur.sty      styles/
 	cp -p ${STYLE-PATH}Ling/my-xspace.sty            styles/

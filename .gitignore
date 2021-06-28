@@ -274,3 +274,5 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+redup-handout.pdf
+redup-slides.pdf
