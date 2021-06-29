@@ -53,6 +53,113 @@
 \exewidth{(35)}
 
 
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Prev
+\section{Previous analyses}
+
+
+\frame{
+\frametitle{Previous HPSG analysis}
+
+\begin{itemize}[<+->]
+    \item \citet{FanSongBond2015}: Unified analysis for adjectival and verbal reduplication
+    \item Adjectival reduplication: amplifier
+    \item Verbal reduplication: downtoner
+\end{itemize}
+
+\begin{figure}
+\centering
+\begin{forest}
+[\type{intensifier\_x\_rel}
+ [\type{amplifier\_x\_rel}
+  [\ldots]
+  [\type{redup\_up\_x\_rel}]
+ ]
+ [\type{downtoner\_x\_rel}
+  [\type{redup\_down\_x\_rel}]
+  [\ldots]
+ ]
+]
+\end{forest}
+\caption{Type hierarchy for intensifier predicates according to \citet[100]{FanSongBond2015}}
+\label{fig:fsb}
+\end{figure}
+}
+
+\frame{
+\frametitle{Previous HPSG analysis}
+
+\ea\label{avm:fsb-redup}
+\avm{
+[\type*{redup-type}\\
+cat|head & \1\\
+val & \2\\
+cont & \3 \normalfont \textsc{hook} [ltop & \4\\
+			ind & \5]\\
+c-cont & <[\type*{event-rel}\\
+		pred & intensifier\_x\_rel\\
+		lbl & \4\\
+		arg1 & \5]>
+]
+}
+$\to$
+\avm{
+[cat|head & \1\\
+val & \2\\
+cont & \3
+]
+}
+\z
+}
+
+\frame{
+\frametitle{Previous HPSG analysis}
+
+\begin{itemize}
+    \item Reduplication is modeled a lexical rule.
+\end{itemize}
+
+\ea\label{avm:fsb-redup-a}
+\avm{
+[\type*{redup-a-lr $\subset$ redup-type}\\
+cat|head & adjective\\
+val & [spr <>]\\
+c-cont & <[pred & redup\_up\_x\_rel]>
+]
+}\\
+\textsc{orthography}: A $\to$ AA; (irregular AB $\to$ AABB)
+\z
+
+\ea\label{avm:fsb-redup-v}
+\avm{
+[\type*{redup-v-lr $\subset$ redup-type}\\
+cat|head & verb\\
+cont|hook & [aspect & non-aspect]\\
+c-cont & <[pred & redup\_down\_x\_rel]>
+]
+}\\
+\textsc{orthography}: A $\to$ AA; A $\to$ A-\emph{yi}-A; (irregular AB $\to$ ABAB)
+\z
+}
+
+\frame{
+\frametitle{Previous HPSG analysis}
+
+\begin{itemize}[<+->]
+    \item Advantages: 
+    \begin{itemize}[<+->]
+        \item Unified analysis for verbal and adjectival reduplication
+        \item A-\emph{yi}-A as an alternative form of AA
+    \end{itemize}
+    \item Problems: 
+    \begin{itemize}[<+->]
+        \item A-\emph{le}-A is not possible because aspect markers are all blocked.
+        \item ABAB and AAB are handled as irregular forms even though they are productive \citep{BascianoMelloni2017, MelloniBasciano2018, Xie2020, Xing2000stat}.
+    \end{itemize}
+\end{itemize}
+}
+
+
 \frame{
 \frametitle{Verbal reduplication lexical rule}
 
@@ -69,7 +176,8 @@ lex-dtr & [phon \1\\
 
 }
 
-
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% current analysis
 \frame{
 \frametitle{Type hierarchy for verbal reduplication and \emph{le}}
 
