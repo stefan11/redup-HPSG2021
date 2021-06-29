@@ -70,71 +70,71 @@ lex-dtr & [phon \1\\
 }
 
 
-\frame{
+\begin{frame}[fragile]
 \frametitle{Type hierarchy for verbal reduplication and \emph{le}}
 
 
 
-% \begin{tikzpicture}[every node/.style={scale=0.7}]
+\begin{tikzpicture}[every node/.style={scale=0.7}]
 
-% \matrix [matrix of nodes, row sep=1cm, nodes={minimum width=4cm}]
-% {
-% \node(redup){
-% 	\avm{
-% 	 [
-% 	 \type*{verbal-reduplication-lr}\\
-% 	 phon \1 $\oplus$ \etag $\oplus$ \1 ] }};
-% &
-% \node(le){
-%  	\avm{
-%  	[\type{perfective-lr}\hspace{0.5cm}\\
-% 	phon \etag $\oplus$ < \normalfont\itshape le > $\oplus$ \etag]}};
-% \\
-% &
-% \node(1le31){
-% 	\avm{
-% 	[\type{perfective-reduplication-lr}\\
-%          phon \1 $\oplus$ < \normalfont\itshape le > $\oplus$ \etag $\oplus$ \1 ]}};
-% &
-% \node(vle){
-% 	\avm{
-% 	[\type{V-le-lr}\\%\hspace{0.3cm}
-% 	phon \etag $\oplus$ < \normalfont\itshape le > ]}};
-% \\
-% \node(AA){
-% 	\avm{
-% 	[\type{AA-lr}\\
-% 	phon \1 $\oplus$ \1 ]}};
-% &
-% \node(AyiA){
-% 	\avm{
-% 	[\type{A-yi-A-lr}\\%\hspace{0.8cm}
-% 	phon \1 $\oplus$ < \normalfont\itshape yi >  $\oplus$  \1]}}; 
-% &
-% \node(AleyiA){
-% 	\avm{
-% 	[\type{A-le-yi-A-lr}\\%\hspace{1.5cm}
-% 	phon \1 $\oplus$ < \normalfont\itshape le, yi > $\oplus$ \1 ]}};
-% &
-% \node(AleA){
-% 	\avm{
-% 	[\type{A-le-A-lr}\\%\hspace{0.8cm}
-% 	phon \1 $\oplus$ < \normalfont\itshape le > $\oplus$ \1]}};\\
-% };
+\matrix [matrix of nodes, row sep=1cm, nodes={minimum width=4cm}]
+{
+\node(redup){
+	\avm{
+	 [
+	 \type*{verbal-reduplication-lr}\\
+	 phon \1 $\oplus$ \etag $\oplus$ \1 ] }};
+&
+\node(le){
+ 	\avm{
+ 	[\type{perfective-lr}\hspace{0.5cm}\\
+	phon \etag $\oplus$ < \normalfont\itshape le > $\oplus$ \etag]}};
+\\
+&
+\node(1le31){
+	\avm{
+	[\type{perfective-reduplication-lr}\\
+         phon \1 $\oplus$ < \normalfont\itshape le > $\oplus$ \etag $\oplus$ \1 ]}};
+&
+\node(vle){
+	\avm{
+	[\type{V-le-lr}\\%\hspace{0.3cm}
+	phon \etag $\oplus$ < \normalfont\itshape le > ]}};
+\\
+\node(AA){
+	\avm{
+	[\type{AA-lr}\\
+	phon \1 $\oplus$ \1 ]}};
+&
+\node(AyiA){
+	\avm{
+	[\type{A-yi-A-lr}\\%\hspace{0.8cm}
+	phon \1 $\oplus$ < \normalfont\itshape yi >  $\oplus$  \1]}}; 
+&
+\node(AleyiA){
+	\avm{
+	[\type{A-le-yi-A-lr}\\%\hspace{1.5cm}
+	phon \1 $\oplus$ < \normalfont\itshape le, yi > $\oplus$ \1 ]}};
+&
+\node(AleA){
+	\avm{
+	[\type{A-le-A-lr}\\%\hspace{0.8cm}
+	phon \1 $\oplus$ < \normalfont\itshape le > $\oplus$ \1]}};\\
+};
 
-% \draw (redup.south) -- (AA.north);
-% \draw (redup.south) -- (1le31.north);
-% \draw(redup.south) -- (AyiA.north);
-% \draw (le.south) -- (1le31.north);
-% \draw (1le31.south) -- (AleyiA.north);
-% \draw (1le31.south) -- (AleA.north);
-% \draw (le.south) -- (vle.north);
+\draw (redup.south) -- (AA.north);
+\draw (redup.south) -- (1le31.north);
+\draw(redup.south) -- (AyiA.north);
+\draw (le.south) -- (1le31.north);
+\draw (1le31.south) -- (AleyiA.north);
+\draw (1le31.south) -- (AleA.north);
+\draw (le.south) -- (vle.north);
 
-% \end{tikzpicture}
+\end{tikzpicture}
 
 
 
-}
+\end{frame}
 
 
 \appendix
