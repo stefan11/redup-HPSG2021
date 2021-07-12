@@ -317,88 +317,218 @@ c-cont & <[pred & redup\_down\_x\_rel]>
 
 %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%% current analysis
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Analysis
+\section{Current analysis}
 
 \frame{
 \frametitle{Verbal reduplication lexical rule}
 
+\ea
 \avm{
 [\type*{verbal-reduplication-lr}\\
 phon & \1 $\oplus$ \etag $\oplus$ \1\\
-rels & < [\type*{delimitative-rel}\\
- 	  arg \3 ] > $\oplus$ \2 $\oplus$ \etag \smallskip\\
+rels & \etag $\oplus$ \2 $\oplus$ < [\type*{delimitative-rel}\\
+ 	  arg \3 ] > \smallskip\\
 lex-dtr & [phon \1\\
 	synsem|loc & [cat|head & verb \\
                       cont|ind & \3 ]\\
         rels \2 ] ]
 }
+\z
+}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Type hierarchy for verbal reduplication and \emph{le}}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+
+\matrix [matrix of nodes, row sep=0.7cm]
+{
+\node(redup){
+	 \type{verbal-reduplication-lr}
+	};
+&
+\node(le){
+	\type{perfective-lr}
+	};
+\\
+&
+\node(1le31){
+	\type{perfective-reduplication-lr}
+	};
+&
+\node(vle){
+	\type{V-le-lr}
+	};
+\\
+\node(AA){
+	\type{AA-lr}
+	};
+&
+\node(AyiA){
+	\type{A-yi-A-lr}
+	}; 
+&
+\node(AleyiA){
+	\type{A-le-yi-A-lr}
+	};
+&
+\node(AleA){
+	\type{A-le-A-lr}
+	};\\
+};
+
+\draw (redup.south) -- (AA.north);
+\draw (redup.south) -- (1le31.north);
+\draw(redup.south) -- (AyiA.north);
+\draw (le.south) -- (1le31.north);
+\draw (1le31.south) -- (AleyiA.north);
+\draw (1le31.south) -- (AleA.north);
+\draw (le.south) -- (vle.north);
+
+\end{tikzpicture}
+\caption{Type hierarchy for lexical rules of verbal reduplication and \emph{le}}
+\label{fig:typehi}
+\end{figure}
+
+\end{frame}
+
+
+
+\frame{
+\frametitle{Verbal reduplication lexical rule}
+
+\ea\label{avm:AA}
+\avm{
+[\type*{AA-lr}\\
+phon & \1 \+ \1\\
+rels &  \2 $\oplus$ < [\type*{delimitative-rel}\\
+ 	  				arg & \3 ] >\\
+lex-dtr & [phon & \1\\
+	\punk{synsem|loc}{[cat|head & verb\\
+                      cont|ind & \3]}\\
+    rels & \2]
+]
+}
+\z
+
+\ea\label{avm:AyiA}
+\avm{
+[\type*{A-yi-A-lr}\\
+phon & \1 \+ \phonliste{yi} \+ \1\\
+rels &  \2 $\oplus$ < [\type*{delimitative-rel}\\
+ 	  					arg & \3 ] >\\
+lex-dtr & [phon & \1\\
+	\punk{synsem|loc}{[cat|head & verb\\
+                      cont|ind & \3]}\\
+    rels & \2]
+]
+}
+\z
+}
+
+\frame{
+\frametitle{Perfective lexical rule}
+
+\ea\label{avm:pfv}
+\avm{
+[\type*{perfective-lr}\\
+phon & \etag \+ \phonliste{le} \+ \etag\\
+rels & <[\type*{perfective-rel}\\
+       arg & \3]> \+ \2 \+ \etag\\
+lex-dtr & [phon & \1\\
+	\punk{synsem|loc}{[cat|head & verb\\
+                      cont|ind & \3]}\\
+        rels & \2]
+]
+}
+\z
+
+\ea\label{avm:vle}
+\avm{
+[\type*{V-le-lr}\\
+phon & \1 \+ \phonliste{le}\\
+rels & <[\type*{perfective-rel}\\
+         arg & \3]> \+ \2\\
+lex-dtr & [phon & \1\\
+	\punk{synsem|loc}{[cat|head & verb\\
+                      cont|ind & \3]}\\
+        rels & \2]
+]
+}
+\z
 
 }
 
 \frame{
-\frametitle{Type hierarchy for verbal reduplication and \emph{le}}
+\frametitle{perfective-reduplication-lr}
 
-
-
-% \begin{tikzpicture}[every node/.style={scale=0.7}]
-
-% \matrix [matrix of nodes, row sep=1cm, nodes={minimum width=4cm}]
-% {
-% \node(redup){
-% 	\avm{
-% 	 [
-% 	 \type*{verbal-reduplication-lr}\\
-% 	 phon \1 $\oplus$ \etag $\oplus$ \1 ] }};
-% &
-% \node(le){
-%  	\avm{
-%  	[\type{perfective-lr}\hspace{0.5cm}\\
-% 	phon \etag $\oplus$ < \normalfont\itshape le > $\oplus$ \etag]}};
-% \\
-% &
-% \node(1le31){
-% 	\avm{
-% 	[\type{perfective-reduplication-lr}\\
-%          phon \1 $\oplus$ < \normalfont\itshape le > $\oplus$ \etag $\oplus$ \1 ]}};
-% &
-% \node(vle){
-% 	\avm{
-% 	[\type{V-le-lr}\\%\hspace{0.3cm}
-% 	phon \etag $\oplus$ < \normalfont\itshape le > ]}};
-% \\
-% \node(AA){
-% 	\avm{
-% 	[\type{AA-lr}\\
-% 	phon \1 $\oplus$ \1 ]}};
-% &
-% \node(AyiA){
-% 	\avm{
-% 	[\type{A-yi-A-lr}\\%\hspace{0.8cm}
-% 	phon \1 $\oplus$ < \normalfont\itshape yi >  $\oplus$  \1]}}; 
-% &
-% \node(AleyiA){
-% 	\avm{
-% 	[\type{A-le-yi-A-lr}\\%\hspace{1.5cm}
-% 	phon \1 $\oplus$ < \normalfont\itshape le, yi > $\oplus$ \1 ]}};
-% &
-% \node(AleA){
-% 	\avm{
-% 	[\type{A-le-A-lr}\\%\hspace{0.8cm}
-% 	phon \1 $\oplus$ < \normalfont\itshape le > $\oplus$ \1]}};\\
-% };
-
-% \draw (redup.south) -- (AA.north);
-% \draw (redup.south) -- (1le31.north);
-% \draw(redup.south) -- (AyiA.north);
-% \draw (le.south) -- (1le31.north);
-% \draw (1le31.south) -- (AleyiA.north);
-% \draw (1le31.south) -- (AleA.north);
-% \draw (le.south) -- (vle.north);
-
-% \end{tikzpicture}
-
-
-
+\ea\label{avm:pfv-redup}
+\avm{
+[\type*{perfective-reduplication-lr}\\
+phon & \1 \+ \phonliste{le} \+ \etag \+ \1\\
+rels & <[\type*{perfective-rel}\\
+       arg & \3]>
+       \+ \2 \+
+        <[\type*{delimitative-rel}\\                 arg & \3]>\\
+lex-dtr & [phon & \1\\
+	\punk{synsem|loc}{[cat|head & verb\\
+                      cont|ind & \3]}\\
+    rels & \2]
+]
 }
+\z
+
+\ea\label{avm:AleyiA}
+\avm{
+[\type*{A-le-yi-A-lr}\\
+phon & \1 \+ \phonliste{le, yi} \+ \1\\
+lex-dtr & [phon & \1
+                ]
+]
+}
+\z
+
+\ea\label{avm:AleA}
+\avm{
+[\type*{A-le-A-lr}\\
+phon & \1 \+ \phonliste{le} \+ \1\\
+lex-dtr & [phon & \1
+                ]
+]
+}
+\z
+}
+
+
+\frame{
+\frametitle{Advantages of the current analysis}
+
+\begin{itemize}
+    \item Unified account for all forms of verbal reduplication in Mandarin Chinese (broader coverage than \citet{FanSongBond2015})
+    \item A-\emph{yi}-A as alternative phonology of AA
+    \item The form and the semantics of A-\emph{le}-A are correctly captured.
+    \item Compatible with disyllabic verbs
+    \item All productive forms are derivable from lexical rules.
+\end{itemize}
+}
+
+\frame{
+\frametitle{Summary}
+
+\begin{itemize}
+    \item Verbal reduplication in Mandarin Chinese is handled as a lexical rule.
+    \item type hierarchy
+    \item multiple inheritance
+    
+\end{itemize}
+}
+
 
 
 \appendix
