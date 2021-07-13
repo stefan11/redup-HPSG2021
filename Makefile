@@ -83,6 +83,7 @@ install:
 	cp -p ${STYLE-PATH}Beamer/HUBeamer/texmf/tex/latex/beamer/themes/color/beamercolorthemebearHU.sty  styles/Beamer/
 	cp -p ${STYLE-PATH}Beamer/HUBeamer/texmf/tex/latex/beamer/themes/inner/beamerinnerthemehui.sty     styles/Beamer/
 	cp -p ${STYLE-PATH}Beamer/HUBeamer/texmf/tex/latex/beamer/themes/outer/beamerouterthemehuo.sty     styles/Beamer/
+	cp -p ${STYLE-PATH}Beamer/HUBeamer/texmf/tex/latex/huberlin/identity-grammatik-deutsch-chinesisch-persisch-hindi.pdf styles/Beamer/
 	cp -p ${STYLE-PATH}Beamer/beamer-movement.sty                                                      styles/Beamer/
 	cp -p ${STYLE-PATH}Beamer/forest-beamer-setup.sty                                                  styles/Beamer/
 	cp -p ${STYLE-PATH}Beamer/hu-literatur-biber.tex                                                   styles/Beamer/
