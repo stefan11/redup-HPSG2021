@@ -108,7 +108,7 @@ install:
 clean:
 	find . -name \*\.bak -exec \rm {} \;
 	find . -name \*~ -exec \rm {} \;
-	rm -f *.bak *.toc *.bbl *.blg *~ *.log *.aux *.*pk *.cut *.tmp *.out *.nav *.snm *.bcf *.vrb
+	rm -f *.bak *.toc *.bbl *.blg *~ *.log *.aux *.*pk *.cut *.tmp *.out *.nav *.snm *.bcf *.vrb *.xml
 
 
 realclean: clean
