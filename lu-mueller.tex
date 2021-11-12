@@ -227,13 +227,13 @@ $\left\langle\mbox{\upshape #1}\right\rangle$}%
 \begin{abstract}
 
 The current study presents an HPSG analysis for verbal reduplication in Mandarin Chinese. 
-After discussing its interaction with \emph{Aktionsarten} and aspect markers, 
-we argue that it is a morphological rather than syntactic process.
-We put forward a lexical rule for verbal reduplication in Mandarin Chinese
+After discussing reduplication's interaction with \emph{Aktionsarten} and aspect markers, 
+we argue that it is a morphological rather than a syntactic process.
+We put forward a lexical rule for verbal reduplication in Mandarin Chinese,
 and the different forms of reduplication are captured in an inheritance hierarchy.
 The interaction between verbal reduplication and aspect marking is handled by multiple inheritance.
 This analysis covers all forms of verbal reduplication in Mandarin Chinese 
-and has none of the shortcomings of the previous analyses.
+and has none of the shortcomings of previous analyses.
 
 \end{abstract}
 
@@ -248,9 +248,9 @@ and has none of the shortcomings of the previous analyses.
 \section{Introduction}\label{ch:intro}
 
 In Mandarin Chinese, verbs can be reduplicated to express a delimitative aspectual meaning \citep[e.g.][]{Chao1968, Chen2001, Dai1997, Li1996, LiThompson1981, Tsao2001, XiaoMcEnery2004, Yang2003, Zhu1998}. 
-It means that the event or state denoted by the verb happens in a short duration and/or a low
-frequency \citep[155]{XiaoMcEnery2004}, such as illustrated in (\ref{ex:redup-ex}).\footnote{In the
-  following paper, reduplications in the example sentences will be set in italics.}
+This means that the event or state denoted by the verb happens in a short duration and/or at a low
+frequency \citep[155]{XiaoMcEnery2004}, as illustrated in (\ref{ex:redup-ex}).\footnote{Reduplications
+in the example sentences will be set in italics.}
 Thus, verbal reduplication in Mandarin Chinese is often translated as doing something ``a little bit/for a little while”.
 
 \setlength{\columnsep}{-27pt}
@@ -270,21 +270,23 @@ Thus, verbal reduplication in Mandarin Chinese is often translated as doing some
 \z
 
 The current study tries to determine a suitable formal and unified analysis for the structure of verbal reduplication in Mandarin Chinese.
-It provides a novel HPSG analysis to this phenomenon and avoids the problems of previous approaches.
+It provides a novel HPSG analysis of this phenomenon and avoids the problems of previous approaches.
 
-After this introduction, we will present in Section \ref{ch:phen} the forms and syntactic distribution as well as the semantics of verbal reduplication in Mandarin Chinese. 
-Importantly, we restrict the object of this study to the AA, A-\emph{yi}-A, A-\emph{le}-A, A-\emph{le}-\emph{yi}-A, ABAB and AB-\emph{le}-AB forms of verbal reduplication in Mandarin Chinese.
-We will also discuss in this section the question of whether the reduplication is a morphological or syntactic process with the help of corpus data.
+We will present in Section \ref{ch:phen} the forms and syntactic distribution as well as the semantics of verbal reduplication in Mandarin Chinese. 
+Importantly, we restrict the object of this study to the AA, A-\emph{yi}-A, A-\emph{le}-A, A-\emph{le}-\emph{yi}-A, ABAB and AB-\emph{le}-AB forms (these templates will be illustrated below).
+We will also discuss in this section, with the help of corpus data, the question of whether the reduplication is a morphological or a syntactic process.
 In Section \ref{ch:prev}, we will discuss the advantages and drawbacks of previous approaches. 
-We will present a new HPSG account for verbal reduplication in Mandarin Chinese in Section \ref{ch:HPSG-redup}.
+Finally, in Section \ref{ch:HPSG-redup}, we will present a new HPSG account for verbal reduplication in Mandarin Chinese.
 
-In addition to introspection, the Modern Chinese subcorpus of the corpus of the \emph{Center for Chinese Linguistics of Peking University} (CCL) \citep{Zhanetal2003, Zhanetal2019} was also consulted. 
+The data in this paper was drawn from several sources.
+In addition to introspection, the Modern Chinese subcorpus of the corpus of the \emph{Center for Chinese Linguistics of Peking University} (CCL) \citep{Zhanetal2003, Zhanetal2019} was consulted. 
 Other examples from novels and plays written by native speakers were also considered.
 
 
 %%%%%%%%%%%
 %%%%%%%%%%% phen
 \section{The phenomenon}\label{ch:phen}
+
 
 This section introduces the fundamental grammatical behaviors of verbal reduplication in Mandarin Chinese. 
 After illustrating its forms, syntactic distribution and semantics, 
@@ -333,18 +335,17 @@ Verbal reduplication in Mandarin Chinese takes the forms listed  in (\ref{ex:red
 
 
 \citet{Arcodiaetal2014}, \citet{Fan1964}, \citet{MelloniBasciano2018} and \citet{Xie2020} compared the AA, ABAB and AABB forms of reduplication 
-and found a number of differences of the AA, ABAB forms compared with the AABB form in terms of their semantics, productivity, syntactic distribution and origin. 
-The current study will only focus on the AA, A-\emph{yi}-A, A-\emph{le}-A, A-\emph{le}-\emph{yi}-A, ABAB and AB-\emph{le}-AB forms of verbal reduplication in Mandarin Chinese.\footnote{For sake of simplicity, 
-the term \emph{reduplication} will be used in the following text to refer specifically to the AA, A-\emph{yi}-A, A-\emph{le}-A, A-\emph{le}-\emph{yi}-A, ABAB and AB-\emph{le}-AB forms of verbal reduplication in Mandarin Chinese, if not specified otherwise.}
+and found a number of differences for the AA and ABAB forms compared to the AABB form in terms of their semantics, productivity, syntactic distribution and origin. 
+The current study will only focus on the AA, A-\emph{yi}-A, A-\emph{le}-A, A-\emph{le}-\emph{yi}-A, ABAB and AB-\emph{le}-AB forms, though 
 AA-\emph{kan}, A-\emph{kan}-\emph{kan}, AAB, A-\emph{yi}-AB, A-\emph{le}-AB will also be mentioned occasionally to provide further arguments.
+In what follows, the term \emph{reduplication} will be used to refer specifically to the AA, A-\emph{yi}-A, A-\emph{le}-A, A-\emph{le}-\emph{yi}-A, ABAB and AB-\emph{le}-AB forms, if not specified otherwise.
+%%%%% EP: Defining terminology is important and should probably take place in the body text, 
+%%%%% not in a footnote that people might skip and then become confused.
 
-
-
-
-The reduplication has a similar syntactic distribution as an unreduplicated verb. 
-The reduplication cannot be aspect marked, though, except with the perfective aspect marker \emph{le} (for further discussions see Section \ref{sec:aspM}). 
+The reduplication has a similar syntactic distribution to an unreduplicated verb. 
+The reduplication cannot be aspect-marked, though, except with the perfective aspect marker \emph{le} (for further discussion, see Section \ref{sec:aspM}). 
 The reduplication is incompatible with an expression that quantifies the duration or the extent of the event expressed in the sentence, as in (\ref{ex:redup-quan}) \citetext{\citealp[114--115]{Chen2005}; \citealp[83--84]{Li1998}}.
-This is probably because the reduplication already contains a quantity meaning \citetext{\citealp[114--115]{Chen2005}; \citealp[84]{Li1998}}, namely a short duration or a small extent.
+This is probably because the reduplication already contains a quantity meaning \citetext{\citealp[114--115]{Chen2005}; \citealp[84]{Li1998}}.
 
 \settowidth\jamwidth{[Test jambox]}
 
@@ -361,7 +362,7 @@ This is probably because the reduplication already contains a quantity meaning \
 
 
 
-The reduplication has a \emph{delimitativeness} meaning \citep[e.g.][]{Chao1968, Chen2001, Dai1997, Li1996, LiThompson1981, Tsao2001, XiaoMcEnery2004, Yang2003, Zhu1998}. 
+The reduplication has a \emph{delimitative} meaning \citep[e.g.][]{Chao1968, Chen2001, Dai1997, Li1996, LiThompson1981, Tsao2001, XiaoMcEnery2004, Yang2003, Zhu1998}. 
 The semantics of the reduplication has the properties of transitoriness,  holisticity  and dynamicity \citetext{\citealp[70--79]{Dai1997}; \citealp[155--159]{XiaoMcEnery2004}}.
 It presents the situation as a  transitory and non\hyp{}decomposable whole,
 which involves not only changes in the initiation and termination of an event, but also changes in the transitory process itself.
@@ -382,10 +383,10 @@ Compared to (\ref{ex:le-dyn-look}), which could mean that the protagonist kept s
 
 As for the other forms of the reduplication, 
 A-\emph{yi}-A is considered to have the same core semantics as AA,
-despite being described to tend to have different pragmatic uses \citep{Yang2003}. 
+although its pragmatic uses may be different \citep{Yang2003}. 
 The semantics of A-\emph{le}-A can be deduced compositionally from its structure. 
 It is a combination of the perfective aspect and delimitativeness, ``conveying a transitory event which has been actualized'' \citep[151]{XiaoMcEnery2004}.
-AA-\emph{kan} and A-\emph{kan}-\emph{kan} are described to express a ``try \ldots{} and find out'' meaning \citep[63]{Cheng2012}.
+In contrast, AA-\emph{kan} and A-\emph{kan}-\emph{kan} are described as expressing a ``try \ldots{} and find out'' meaning \citep[63]{Cheng2012}.
 \citet[290]{Tsao2001} also observed that the tentative meaning is particularly prominent when the reduplication is followed by \emph{kan} `look'.
 We consider the tentativeness implied by these two forms to be a pragmatic extension of delimitativeness.
 The tentative meaning is made prominent by the verb \emph{kan} `look',
@@ -397,7 +398,7 @@ and the whole structure can be understood as ``do A a little bit and see''.
 %%%%%%%%
 \subsection{Interaction with \emph{Aktionsarten}}\label{sec:Aktionsarten}
 
-Previous research often claimed that the reduplication can only be used for verb classes of certain \emph{Aktionsarten}, while it is infelicitous for other ones.
+Previous research often claimed that the reduplication can only be used for verb classes of certain \emph{Aktionsarten}, while it is infelicitous for others.
 \citet[277--278]{Hong1999} and \citet[234--235]{LiThompson1981} suggested that reduplication is only possible for volitional activity verbs.
 \citet[70--71]{Dai1997} and \citet[290]{Tsao2001} both considered that reduplication can only be used in dynamic situations.
 The former further claimed that achievement verbs cannot be reduplicated.
@@ -450,7 +451,7 @@ he cough-cough then well \textsc{ptc}\\
 \z
 \z
 
-However, examples such as those in (\ref{ex:redup-achi-stat1}) -- (\ref{ex:redup-achi-stat2}) were found in novels and plays written by native speakers and  sentences like (\ref{ex:redup-achi-stat4}) and (\ref{ex:redup-achi-stat5}) were constructed by native speaker linguists.
+However, examples such as those in (\ref{ex:redup-achi-stat1})--(\ref{ex:redup-achi-stat2}) were found in novels and plays written by native speakers, and  sentences like (\ref{ex:redup-achi-stat4}) and (\ref{ex:redup-achi-stat5}) were constructed by native speaker linguists.
 Here, achievement verbs like \emph{wang} `forget' and \emph{sheng} `give birth to' and stative verbs like \emph{shutan} `be comfortable' and \emph{bing} `be sick' are reduplicated.
 
 \footnotetext[4]{Liu, Zhen. 1963. \emph{Chang chang de liushui [Long long water]}, 72. Beijing: The Writers Publishing House.}
@@ -493,20 +494,21 @@ and non\hyp{}volitional verbs, states and achievements can be reduplicated in ce
 As mentioned above, the reduplication can only be marked by the perfective aspect marker \emph{le} but not other aspect markers.\footnote{
 There is no consensus on which elements exactly are considered aspect markers in Mandarin Chinese. We only discuss the most commonly recognized ones here.
 }
-We consider this incompatibility be due to semantic reasons.
+We believe this incompatibility to be for semantic reasons.
 
-\citet[Ch. 4]{XiaoMcEnery2004} considered \emph{le}, \emph{guo} and reduplication to indicate perfective aspects.
-The perfective aspect marker \emph{le} is compatible with reduplication while the experiential aspect marker \emph{guo} is not.
+\citet[Ch. 4]{XiaoMcEnery2004} considered the markers \emph{le} and \emph{guo}, as well as reduplication, to indicate perfective aspects.
+The perfective aspect marker \emph{le} is compatible with reduplication, while the experiential aspect marker \emph{guo} is not.
 \emph{Le} ``can focus on both heterogeneous internal structures and changing points'' \citep[129]{XiaoMcEnery2004}.
-It is compatible with the reduplication, because its dynamicity can relate to not only the termination or instantiation of an event (a point of change), but also the process of the situation, just like that of the reduplication.
+It is compatible with the reduplication because its dynamicity can relate not only to the termination or instantiation of an event (a point of change), but also to the process of the situation, just like the dynamicity of the reduplication.
+%% EP: I hope I identified the antecedent correctly. If not, please replace "the dynamicity" with whatever it should be.
 
-On the other hand, the experiential aspect marker \emph{guo} cannot co\hyp{}occur with a reduplicated verb, 
-because its dynamicity attributes to an ``experiential change'' \citep[148]{XiaoMcEnery2004}, 
+On the other hand, the experiential aspect marker \emph{guo} cannot co\hyp{}occur with a reduplicated verb 
+because its dynamicity relates to an ``experiential change'' \citep[148]{XiaoMcEnery2004}, 
 namely that a situation has been experienced historically and that ``the final state of the situation no longer obtains'' at the reference time \citep[144]{XiaoMcEnery2004}. 
 It is clear that \emph{guo} only indicates a change at the termination of a situation and cannot express the dynamicity within a situation.
 Hence, it is incompatible with the semantics of the reduplication.
 
-Due to the holistic semantics of the reduplication, it is incompatible with imperfective aspect markers: the durative aspect marker \emph{zhe} and the progressive aspect marker \emph{zai}, as both only focus on  a part of the situation and do not view the situation as a whole \citep[Ch. 5]{XiaoMcEnery2004}.
+Due to the holistic semantics of the reduplication, it is incompatible with imperfective aspect markers---the durative aspect marker \emph{zhe} and the progressive aspect marker \emph{zai}---as both only focus on  a part of the situation and do not view the situation as a whole \citep[Ch. 5]{XiaoMcEnery2004}.
 
 From the illustration above, it seems that due to its semantics, reduplication can only be marked by \emph{le} but not the other aspect markers.
 
@@ -521,13 +523,13 @@ From the illustration above, it seems that due to its semantics, reduplication c
 
 The literature on reduplication makes different assumptions on whether it is a morphological or syntactic phenomenon.
 \citet{Chao1968} and \citet{LiThompson1981} listed reduplication under morphological processes. 
-\citet{Arcodiaetal2014}, \citet{BascianoMelloni2017}, \citet{MelloniBasciano2018}, \citet{Xie2020}, \citet{Xiong2016}, \citet{YangWei2017}, on the other hand, claimed it to be syntactic.
-This section reviews the arguments in \citet{Xie2020}, applies the tests proposed by \citet{Duanmu1998} and \citet{Schaefer2009} to distinguish words from phrases in Mandarin Chinese. 
+\citet{Arcodiaetal2014}, \citet{BascianoMelloni2017}, \citet{MelloniBasciano2018}, \citet{Xie2020}, \citet{Xiong2016} and \citet{YangWei2017}, on the other hand, claimed it to be syntactic.
+This section reviews the arguments in \citet{Xie2020} and applies the tests proposed by \citet{Duanmu1998} and \citet{Schaefer2009} to distinguish words from phrases in Mandarin Chinese. 
 The results argue for a morphological status of reduplication.
 
 
-\citet{Xie2020} compared the AA and the ABAB forms of reduplication with the AABB form and claimed that AA and ABAB are syntactic processes while AABB is morphological.
-She pointed out that AA and ABAB behave differently from AABB in their productivity, possibility of \emph{le} insertion, categorial stability, transitivity, and input/output constraints.
+\citet{Xie2020} compared the AA and the ABAB forms of reduplication with the AABB form and claimed that AA and ABAB are syntactic processes, while AABB is morphological.
+She pointed out that AA and ABAB behave differently from AABB in their productivity, possibility of \emph{le} insertion, categorial stability, transitivity and input/output constraints.
 While AA and ABAB are highly productive, AABB shows low productivity. 
 \emph{Le} can be inserted freely into AA and ABAB but not into AABB.
 The output of AA and ABAB does not change the grammatical category of the input (verb), but the output of AABB could have other categories such as adverb or adjective.
@@ -537,7 +539,8 @@ The two groups also have different input and output constraints.
 On the other hand, AABB requires its input to be a complex verb whose constituents are either synonymous, antonymous or logically coordinated. 
 Moreover, the output of AABB has an increasing meaning, i.e. an event happens repeatedly or continuously, as opposed to the delimitative meaning of AA and ABAB.
 
-However, a morphological process can be productive, and it does not necessarily change the category or valency of the input.
+However, these criteria do not suitably distinguish morphological and syntactic processes. 
+A morphological process can be productive, and it does not necessarily change the category or valency of the input.
 Further, if \emph{le} is considered to be a morphological element \citep[e.g.][]{Huangetal2009, MuellerLipenkova2013}, the insertion of \emph{le} does not have to be viewed as a syntactic
 process either.
 It seems that \citet{Xie2020} only showed that AA and ABAB are different processes than AABB, but not necessarily that the former is syntactic while the latter morphological.
@@ -552,18 +555,19 @@ while that of a word is usually not \citetext{\citealp[140]{Duanmu1998}; \citeal
 The meaning of the reduplication is not compositional, 
 as it does not mean that the event denoted by the verb happens twice or multiple times, 
 but rather that the event happens for a short duration and/or a low frequency.
-
+This non-compositionality suggests that a reduplication is more word-like.
 
 The first syntactic test is phrasal extension, namely the addition of optional elements \citetext{\citealp[150]{Duanmu1998}; \citealp[280]{Schaefer2009}}. 
-Optional elements that can possibly appear in a phrase should be able to be added into it.
-Subparts of a phrase should be able to be modified separately. 
-And these should not be possible for a word.
-As illustrated in (\ref{ex:redup-forms}) in Section~\ref{ch:intro}, the reduplication can only be separated by \emph{le} and \emph{yi}. 
-As mentioned above, whether aspect markers are considered to be morphological or syntactic elements depends on the theoretical framework (and possibly the target language).
+If the unit is a phrase, then optional elements that may appear in phrases should be able to be added into it.
+And subparts of a phrase should be able to be modified separately. 
+If the unit is a word, however, then neither of these should be possible.
+As illustrated in (\ref{ex:redup-forms}) in Section~\ref{ch:intro}, the reduplication can only be separated by \emph{le} and \emph{yi}, but the word status of these elements cannot be easily defined.
+We mentioned above that whether aspect markers like \emph{le} are considered to be morphological or syntactic elements depends on the theoretical framework (and possibly the target language).
 And the status of \emph{yi} is unclear.
-Also, each element in the reduplication cannot be modified by itself. 
+Turning to the second part of this test, separate modification, we see that elements in the reduplication cannot be modified individually. 
 Compared to (\ref{ex:ext-redup1}), where the adverbial \emph{qingsheng de} `quietly' modifies the whole reduplication, (\ref{ex:ext-redup2}) is ungrammatical, 
 as the adverbial cannot modify the second element in the reduplication alone.
+All in all, by the test of phrasal extension, reduplications behave more like words than like phrases.
 
 \setlength{\columnsep}{-10pt}
 \ea
@@ -582,10 +586,11 @@ as the adverbial cannot modify the second element in the reduplication alone.
 
 
 
-The second syntactic test is phrasal substitution, namely the substitution of smaller exemplars of a specific category with a full blown XP \citetext{\citealp[152]{Duanmu1998}; \citealp[280]{Schaefer2009}}. 
+The second syntactic test is phrasal substitution, namely the substitution of smaller exemplars of a specific category with a full-blown XP \citetext{\citealp[152]{Duanmu1998}; \citealp[280]{Schaefer2009}}. 
 If a part of an expression is actually an XP that only contains one element, a full realization of this XP should be possible as well.
 Otherwise, this expression is considered to be a word.
-In a reduplication structure, it is ungrammatical to substitute each element with a full VP (\ref{ex:sub-redup}).
+As (\ref{ex:sub-redup}) shows, in a reduplication structure, it is ungrammatical to substitute each element with a full VP.
+Again, reduplications look more word-like than phrase-like.
 
 \ea\label{ex:sub-redup}
 \begin{multicols}{2}
@@ -602,18 +607,19 @@ In a reduplication structure, it is ungrammatical to substitute each element wit
 \z
 
 
-The third syntactic criterion is conjunction reduction. It should only be possible for coordinated phrases 
+Finally, the third syntactic criterion is conjunction reduction. Reduction should only be possible for coordinated phrases 
 and not for coordinated words \citetext{\citealp[137]{Duanmu1998}; \citealp[283]{Schaefer2009}}. 
 For the reduplication, conjunction reduction does not seem to be possible. 
 In (\ref{ex:co-redup1}), the reduplication \emph{jiao-jiao} `chew a little bit' is coordinated with a simple verb \emph{mo} `apply' together with the adverbial \emph{yidian} `a little bit'.
-Without the adverbial \emph{yidian} `a little bit', \emph{mo} `apply' by itself cannot express the additional `a little bit' meaning even when it is coordinated with a reduplicated verb.
-Similarly, in (\ref{ex:co-redup2}), the reduplication \emph{kan-le-kan} `look a little bit' is coordinated with the predicate \emph{zou-le chulai} `walked out'. The verb in the latter case is not reduplicated and it cannot express the delimitative meaning either.
+Without the adverbial \emph{yidian} `a little bit', \emph{mo} `apply' by itself cannot express the additional `a little bit' meaning, even when it is coordinated with a reduplicated verb.
+Similarly, in (\ref{ex:co-redup2}), the reduplication \emph{kan-le-kan} `look a little bit' is coordinated with the predicate \emph{zou-le chulai} `walked out'. The verb in the latter case is not reduplicated, and it cannot express the delimitative meaning either.
+Once again, this criterion suggests that reduplications do not have this expected property of phrases.
 
 \ea
   \ea\label{ex:co-redup1}
   \gll wujian gong-xiu mo dian bohe-gao huo \textbf{jiao}-\textbf{jiao} kouxiangtang.\\
     midday work-break apply a.little mint-cream or chew-chew chewing.gum\\ \jambox{(CCL)}
-    \glt `During the working break in the midday, apply a little bit of mint cream or chew some chewing gum a little bit.'
+    \glt `During the working break at midday, apply a little bit of mint cream or chew some chewing gum a little bit.'
     
    \ex\label{ex:co-redup2}
    \gll Song Ailing \textbf{kan}-\textbf{le}-\textbf{kan} yupen you zou-le chulai.\\
@@ -623,7 +629,7 @@ Similarly, in (\ref{ex:co-redup2}), the reduplication \emph{kan-le-kan} `look a 
 \z
 
 
-Following the analyses above, it is clear that the reduplication failed all of the tests. 
+Following the analyses above, it is clear that the reduplication failed all of the tests for phrasal status. 
 Therefore, it seems more likely to assume the reduplication to be a morphological process rather than a syntactic one. 
 
 
@@ -633,9 +639,9 @@ Therefore, it seems more likely to assume the reduplication to be a morphologica
 %%%%%%%%%%% prev
 \section{Previous analyses}\label{ch:prev}
 
-Previous analyses on the reduplication in Mandarin Chinese and in other languages can be classified
-into three groups: the reduplicant as a verbal classifier, the reduplicant as an aspect marker, and
-the postulation of a special reduplication structure.
+Previous analyses of the reduplication in Mandarin Chinese and in other languages can be classified
+into three groups: those that consider the reduplicant to be a verbal classifier, those that take the reduplicant to be an aspect marker
+and those that postulate a special reduplication structure.
 
 
 \citet{Chao1968}, \citet{Fan1964} and \citet{Xiong2016} analyzed the reduplicant in Mandarin Chinese
@@ -645,7 +651,7 @@ In this analysis, the first element in the reduplication is the actual verb,
 the second element is a verbal classifier borrowed from the verb, 
 and \emph{yi} `one' is an optional pseudo-numeral that only has an abstract `a little bit' meaning.
 Although the reduplication and the verbal classifier both serve to quantify the extent of an event and can often be used interchangeably, 
-they behave differently in the following three aspects.
+they behave differently in the following three ways.
 First, the verb and the verbal classifier can be separated, while the reduplication cannot \citep[269]{Paris2013}.
 Second, unlike verbal classifiers, the \emph{yi} ‘one’ in A-\emph{yi}-A cannot be replaced by other numerals \citep[299--230]{YangWei2017}.
 Third, idioms lose their idiomatic meaning when used with verbal classifiers, 
@@ -659,13 +665,13 @@ due to the delimitative meaning of the reduplication.
 In \citet{Arcodiaetal2014} and \citegen{BascianoMelloni2017} analysis, 
 the reduplication of stative and achievement verbs is structurally ruled out,
 which does not fit the empirical observations we presented in Section~\ref{sec:Aktionsarten}.
-The other analyses along the line of aspect marker all have problems with the A-\emph{yi}-A form, 
+The other analyses along these lines all have problems with the A-\emph{yi}-A form, 
 as the addition of \emph{yi} in the reduplication does not lead to further syntactic or semantic functions.
 Moreover, although the reduplicant is postulated as a special affix that copies the phonology of the base morpheme,
 the exact nature of this copying process is not formalized.
 
  
- \citet{Ghomeshietal2004} gave an analysis for Contrastive Reduplications (CRs) in English like (\ref{ex:cr1}) based on the Parallel Architecture proposed by \citet{Jackendoff97a, Jackendoff2002}
+ \citet{Ghomeshietal2004} gave an analysis for Contrastive Reduplications (CRs) in English like (\ref{ex:cr1}) based on the Parallel Architecture proposed by \citet{Jackendoff97a, Jackendoff2002},
 as shown in Figure~\ref{ghomeshi-cr}.\footnote{P = phonological unit, P/E/S CTR = prototypical/extreme/salient contrast, XP$^{min}$ = XP without its specifier}
 
 \ea\label{ex:cr1}
@@ -720,16 +726,16 @@ CTR
  
 Applying this to the reduplication in Mandarin Chinese, the structure should be something like Figure~\ref{ghomeshi-cn}.\footnote{DELIM = delimitative}\textsuperscript{,}\footnote{
 Although the reduplication in Mandarin Chinese does not have a contrastive meaning, 
-we preserved the notation of CR$^{syn}$ in \citet{Ghomeshietal2004} here to simply refer to the reduplicant.
+we preserved the notation of CR$^{syn}$ in \citet{Ghomeshietal2004} to simply refer to the reduplicant.
 In English, it makes sense to assume CR$^{syn}$ to be a syntactic unit, because the base can be XP$^{min}$. 
 But for Mandarin Chinese, the base can only be V.
 As \citet[353]{Ghomeshietal2004} wrote: ``when applying to its smallest scope, X inside of a word, it has the feel of other things that attach there, i.e., morphological affixes''.
-It seems that it suffices to assume the reduplication in Mandarin Chinese to be a morphological phenomenon (cf. Section~\ref{sec:word}).
+It seems that it suffices to assume the reduplication in Mandarin Chinese to be a morphological phenomenon (cf.\ Section~\ref{sec:word}).
 We continue to call the second column ``syntax'' to preserve the consistency of the notations.
 }
 Further, A-\emph{le}-A can be handled as two compositional processes [[[A]-\emph{le}] -A].
 Moreover, the \emph{yi} in A-\emph{yi}-A and A-\emph{le}-\emph{yi}-A can simply be viewed as a dangling phonological unit. 
-In this case, the phonological unit \phonliste{ yi } is neither coindexed with a syntactic unit nor with a semantic one.
+In this case, the phonological unit \phonliste{ yi } is coindexed neither with a syntactic unit nor with a semantic one.
 
 \begin{figure}[htbp]
 \centering
@@ -775,18 +781,18 @@ DELIM\\([LOOK]_{j})
 
 This analysis correctly captures the fact that the addition of \emph{yi} does not change the syntactic and semantic behavior of the reduplication.
 It also provides a formal account for the phonology of the reduplication.
-On the other hand, by assuming a construction specially for the reduplication, \citegen{Ghomeshietal2004} approach lost the connection between the reduplication and other aspect markers in Mandarin Chinese, unlike the affixation analysis.
+On the other hand, by assuming a construction specially for the reduplication, \citegen{Ghomeshietal2004} approach loses the connection between the reduplication and other aspect markers in Mandarin Chinese, unlike the affixation analysis.
 
  
 Finally, \citet{FanSongBond2015} provided a unified HPSG analysis for the reduplication of both verbs and adjectives in Mandarin Chinese.
 They considered reduplication to be a morphological process and modeled the reduplication via lexical rules.
-They regarded the reduplication to function as an intensifier predicate,
+They regarded the reduplication as functioning as an intensifier predicate,
 which has the subtypes \type{redup\_up\_x\_rel} and \type{redup\_down\_x\_rel}.
 They provided the lexical rule (\ref{avm:fsb-redup}) for reduplication in general,
 and further proposed \type{redup-a-lr} and \type{redup-v-lr} as subtypes of \type{redup-type}, 
 as illustrated in (\ref{avm:fsb-redup-a}) and (\ref{avm:fsb-redup-v}) respectively.
 The orthography is handled separately.
-The AABB form for adjectives and the ABAB form for verbs, as well as the AAB form for V-O compounds are handled as irregular derivation forms.
+The AABB form for adjectives and the ABAB form for verbs, as well as the AAB form for V-O compounds, are handled as irregular derivation forms.
 
 \ea\label{avm:fsb-redup}
 \scalebox{.9}{%
@@ -846,14 +852,14 @@ To begin with, since the combination with aspect markers is completely forbidden
 Moreover, as verbal reduplication is  considered to express a delimitative aspectual meaning,
 it seems unconvincing to assume that there is no aspect information in its semantics.
 We consider a semantic explanation as described in Section \ref{sec:aspM} to be more reasonable for ruling out aspect markers other than \emph{le}.
-Furthermore, this account can only deal with monosyllabic reduplication and handles ABAB and AAB as irregular forms, for the reason that ABAB and AAB reduplication of AB verbs ``are not very productive in Chinese'' \citep[102]{FanSongBond2015}.
-This is not true. 
+Furthermore, this account can only deal with monosyllabic reduplication and handles ABAB and AAB as irregular forms, for the reason that ABAB and AAB reduplication of AB verbs is supposedly ``not very productive in Chinese'' \citep[102]{FanSongBond2015}.
+However, this is not true. 
 \citet{BascianoMelloni2017}, \citet{MelloniBasciano2018},  \citet{Xie2020}  and \citet{Xing2000stat} all considered both AA and ABAB to be productive, 
 and \citet{Xing2000stat} concluded that AAB is productive as well.
 Therefore, ABAB and AAB should not be handled as  irregular forms, 
 but should be derivable from lexical rules.
 
-The shortcomings of previous analyses lead us to propose a new analysis on verbal reduplication with HPSG, that formalizes its phonology, resolves the problem of \emph{yi} and preserves the generalization on aspect marking, as we will elaborate in Section \ref{ch:HPSG-redup}. 
+The shortcomings of previous analyses lead us to propose a new HPSG analysis of verbal reduplication that formalizes its phonology, resolves the problem of \emph{yi} and preserves the generalization on aspect marking.
 
 
 
@@ -862,18 +868,18 @@ The shortcomings of previous analyses lead us to propose a new analysis on verba
 %%%%%%%%%%% the analysis
 \section{A new HPSG analysis}\label{ch:HPSG-redup}
 
-In what follows, we suggest a new lexical rule-based analysis of aspect marking and reduplication
+In what follows, we suggest a new lexical-rule-based analysis of aspect marking and reduplication
 using Minimal Recursion Semantics as the semantic representation formalism \citep{CFPS2005a}.
 
 The implicational constraint in  (\ref{avm:redup}) shows the constraints on all structures of type
 \emph{verbal-reduplication-lr} for Mandarin Chinese. Such structures take a verb as \textsc{lex-dtr}.  
 The output reduplicates the phonology of the input verb with the possibility to have further phonological material in between.
 \etag{} indicates an underspecified list which could be empty or not. A delimitative relation is
-appended to the \textsc{rels} value of the input verb and it takes the event index of the input verb
+appended to the \textsc{rels} value of the input verb, and it takes the event index of the input verb
 as argument. The label of the output \iboxb{2} is identified with the label of the input and with the label of
 the deliminitive relation, hence \type{deliminitive-rel} is treated as a modifier. Further relations can be added at the beginning of the \textsc{rels} list to allow for
 the additional perfective meaning in A-\emph{le}-A and A-\emph{le}-\emph{yi}-A. 
-The combination with perfective will be elaborated in the following paragraphs.
+The combination with the perfective will be elaborated on in the following paragraphs.
 
 \ea
 \type{verbal-reduplication-lr} \impl\\
@@ -980,15 +986,15 @@ lex-dtr & [ rels \1 ] ]
 }
 \z
 The \textsc{rels} list of the output of the lexical rule \iboxb{1} is the \textsc{rels} list of
-the daughter plus one element. Since the element is specified in the supertype it has not be
+the daughter plus one element. Since the element is specified in the supertype, it has not been
 specified in (\mex{0}) again. 
 
-\type{non-prefective-verbal-reduplication-lr} has \type{aa-lr} and \type{a-yi-a-lr} as direct subtypes.
+\type{non-perfective-verbal-reduplication-lr} has \type{aa-lr} and \type{a-yi-a-lr} as direct subtypes.
 (\ref{avm:AA}) and (\ref{avm:AyiA}) show \type{aa-lr} and \type{a-yi-a-lr}, respectively.
 As subtypes of \type{ver\-bal\hyp{}re\-dup\-li\-ca\-tion\hyp{}lr} illustrated in (\ref{avm:redup}), 
 both inherit the constraints on the \textsc{lex-dtr} and on the semantics of the output, 
-and because of (\mex{0}) no extra material is appended to the \textsc{rels} value of the input verb
-and the list containing the \type{deliminiative-rel}. In addition to the inherited constraints,
+and because of (\mex{0}), no extra material is appended to the \textsc{rels} value of the input verb
+and the list containing the \type{deliminitive-rel}. In addition to the inherited constraints,
 \type{aa-lr} and \type{a-yi-a-lr} specify the phonology of the output differently.
 \type{aa-lr} determines that the \etag between the two phonological copies in (\ref{avm:redup}) is empty, 
 whereas \type{a-yi-a-lr} specifies this list of phonological material as \phonliste{ yi }:
@@ -1023,7 +1029,7 @@ Constraints on lexical rules of type \type{aa-lr} and \type{a-yi-a-lr}:\\
 The lexical rules with all inherited constraints are given in (\mex{1}) and (\mex{2}):
 
 \ea\label{avm:AA}
-The A-A lexical rule with all constraints inherited from the supertypes:
+The AA lexical rule with all constraints inherited from the supertypes:
 \scalebox{.9}{%
 \avm{
 [\type*{aa-lr}\\
@@ -1044,14 +1050,14 @@ lex-dtr & [phon & \1\\
 
 
 \type{v-le-lr} is a direct subtype of the \type{perfective-lr}.
-\type{perfective-reduplication-lr} inherits from both \type{verbal-reduplication-lr} and \type{per\-fec\-tive\hyp{}lr},
-and has two subtypes \type{a-le-yi-a-lr} and \type{a-le-a-lr} itself.
-\type{verbal-redupliaction-lr} is already presented in (\ref{avm:redup}). We now turn to the
+\type{perfective-reduplication-lr} inherits from both \type{verbal-reduplication-lr} and \type{per\-fec\-tive\hyp{}lr}
+and has two subtypes, \type{a-le-yi-a-lr} and \type{a-le-a-lr} itself.
+\type{verbal-reduplication-lr} is already presented in (\ref{avm:redup}). We now turn to the
 constraints on \type{perfective-lr} and its subtypes.
 
 % moved here to get space
 \ea\label{avm:AyiA}
-The A-yi-A lexical rule with all constraints inherited from the supertypes:
+The A-\emph{yi}-A lexical rule with all constraints inherited from the supertypes:
 \scalebox{.9}{%
 \avm{
 [\type*{a-yi-a-lr}\\
@@ -1074,7 +1080,7 @@ lex-dtr & [phon & \1\\
 \citet[246]{MuellerLipenkova2013} proposed the perfective lexical rule given in (\ref{avm:pfv-old}), adapted to the formalization adopted in the current paper.
 It takes a verb as \textsc{lex-dtr}
 and appends \phonliste{ le } to its phonology.
-Further, it accounts for the change in semantics by appending the \textsc{rels} value of the input verb to a \type{prefective-rel}.
+Further, it accounts for the change in semantics by appending the \textsc{rels} value of the input verb to a \type{perfective-rel}.
 
 \ea\label{avm:pfv-old}
 Perfective lexical rule adapted from \citet[246]{MuellerLipenkova2013}:\\
@@ -1097,7 +1103,7 @@ lex-dtr & [phon & \1\\
 }}
 \z
 The event variables \iboxb{3} of the input and the output verb are shared. The \textsc{ltop} of the
-output of the lexical rule \iboxb{2} is the label of the perfective relation and this relation
+output of the lexical rule \iboxb{2} is the label of the perfective relation, and this relation
 scopes over the embedded verb. The handle of the embedded verb \iboxb{4} is the argument of the \type{perfective-rel}. 
 
 The lexical rule suggested in (\ref{avm:pfv-old}) only explains simple perfective aspect marking with \emph{le}, where \emph{le} immediately follows the verb.
@@ -1105,7 +1111,7 @@ But it cannot account for the perfective aspect marking of a reduplicated verb, 
 It can only appear between the verb and the reduplicant.
 In order to accommodate \emph{le} marking for both simple and reduplicated verbs, a general perfective lexical rule as in (\ref{avm:pfv-new}) and a subtype \type{v-le-lr} as in (\ref{avm:vle}) are posited here.
 Besides adding a \type{perfective-rel} in the \textsc{rels} list of the output as in (\ref{avm:pfv-old}), 
-the \type{perfective-lr} in (\ref{avm:pfv-new}) allows an underspecified list to be append at the end of the \textsc{rels} list.
+the \type{perfective-lr} in (\ref{avm:pfv-new}) allows an underspecified list to be appended at the end of the \textsc{rels} list.
 The \textsc{phon} value of the output makes it possible for further phonological material to occur both before and after \phonliste{ le }.
 
 \ea\label{avm:pfv-new}
@@ -1130,7 +1136,7 @@ lex-dtr & [%phon & \1\\
 \z
 
 \type{v-le-lr} as given in (\ref{avm:vle}) inherits from \type{perfective-lr} and specifies that the first element in the output \textsc{phon} list is identified with the \textsc{phon} value of the input verb
-and nothing else comes after \phonliste{ le }.
+and that nothing else comes after \phonliste{ le }.
 Furthermore, no other list can be appended at the end of the \textsc{rels} list of the output anymore.
 This corresponds to the proposal of \citet[246]{MuellerLipenkova2013} shown in (\ref{avm:pfv-old}), which accounts for the simple perfective marking of verbs.
 
@@ -1154,7 +1160,7 @@ lex-dtr & [phon & \1\\
 \z
 
 \type{perfective-reduplication-lr} inherits from both \type{verbal-reduplication-lr} and \type{per\-fec\-tive\hyp{}lr}.
-The \textsc{phon} value of the output reduplicates the phonology of the input verb and states that there is \phonliste{ le } in between and potentially further phonological material.
+The \textsc{phon} value of the output reduplicates the phonology of the input verb and states that there is \phonliste{ le } in between, as well as potentially further phonological material.
 The \textsc{rels} list of the output appends the \type{delimitative-rel} to the \type{perfective-rel} and the \textsc{rels} value of the input verb.
 The arguments of both \type{perfective-rel} and \type{delimitative-rel} share the event index of the
 input verb \iboxb{3} to ensure that they apply to the same event denoted by the input verb. The
@@ -1187,17 +1193,17 @@ lex-dtr & [phon & \1\\
 }}
 %}
 \z
-For example, (\ref{ex-he-tasted-the-soup-a-little-bit}) we get the following MRS representation,
+For example (\ref{ex-he-tasted-the-soup-a-little-bit}), we get the following MRS representation,
 where h1 and h2 correspond to the handles \ibox{2} and \ibox{4} and e1 to the event variable \ibox{3}:
 \ea
 h1 \sliste{ h1:perfective(e1,h2), h2:taste(e1,he,soup), h2:deliminative(e1) }
 \z
-So the deliminitive relation is treated as an adjunct to the main relation of the verb and the
-prefective relation scopes over both the main relation and the delimitative relation.
+So the deliminitive relation is treated as an adjunct to the main relation of the verb, and the
+perfective relation scopes over both the main relation and the delimitative relation.
 
 Two subtypes of \type{perfective-reduplication-lr} are posited:
 \type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} %as in (\ref{avm:AleyiA}) 
-and \type{a-le-a-lr} as in (\ref{avm:AleA}). %(\ref{avm:AleA}).
+and \type{a-le-a-lr}, as shown in (\ref{avm:AleA}). %(\ref{avm:AleA}).
 They take over the semantic change to the input from \type{perfective\hyp{}reduplication\hyp{}lr}, but specify the \textsc{phon} value differently.
 Specifically, \type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} specifies the middle phonological material as
 \phonliste{ le, yi }, while \type{a-le-a} specifies it as \phonliste{ le } only.
@@ -1246,12 +1252,12 @@ lex-dtr & [phon & \1
 % \z
 
 
-Since the above described lexical rules do not constrain the number of syllables of the input verb, but simply reduplicate its phonology  as a whole,
+Since the above-described lexical rules do not constrain the number of syllables of the input verb, but simply reduplicate its phonology  as a whole,
 they can also account for the ABAB and the AB-\emph{le}-AB forms of reduplication,
 as long as the input verb is disyllabic.
 Notice that  the lexical rules above also produce AB-\emph{yi}-AB and AB\hyp{}\emph{le}\hyp{}\emph{yi}\hyp{}AB for disyllabic input verbs.
-These forms, however, are generally considered unacceptable \citetext{\citealp[160]{BascianoMelloni2017}, \citealp[275--276]{Hong1999}, \citealp[30]{LiThompson1981}, \citealp[239]{YangWei2017}}.
-On the other hand, \citet[269]{Fan1964} and \citet[143]{Sui2018} considered AB-\emph{yi}-AB and AB-\emph{le}-\emph{yi}-AB to be possible, even though they both recognized that these two forms are rare.
+Although these forms are generally considered unacceptable \citetext{\citealp[160]{BascianoMelloni2017}, \citealp[275--276]{Hong1999}, \citealp[30]{LiThompson1981}, \citealp[239]{YangWei2017}}, 
+\citet[269]{Fan1964} and \citet[143]{Sui2018} considered AB-\emph{yi}-AB and AB-\emph{le}-\emph{yi}-AB to be possible, even though they both recognized that these two forms are rare.
 Indeed, a few examples of AB-\emph{yi}-AB and AB-\emph{le}-\emph{yi}-AB were found (\ref{ex:ABleyiAB}).
 
 %\footnotetext[11]{\emph{Yuanqu xuan: Luzhailang [Selected Yuanqu: Luzhailang]}, as cited in \citet[15]{Zhang2000}}
@@ -1287,20 +1293,19 @@ Indeed, a few examples of AB-\emph{yi}-AB and AB-\emph{le}-\emph{yi}-AB were fou
 \z
 
 This suggests that  even though AB-\emph{yi}-AB and AB-\emph{le}-\emph{yi}-AB might be degraded, they are not ungrammatical \emph{per se}.
-The reason for this degradedness is probably phonological, namely  AB-\emph{yi}-AB and AB-\emph{le}-\emph{yi}-AB contain too many syllables \citetext{\citealp[274]{Fan1964}, \citealp[143]{Sui2018}, \citealp[239]{YangWei2017}, \citealp[15]{Zhang2000}}.
-We argue that  the reduced acceptability of AB-\emph{yi}-AB and AB\hyp{}\emph{le}\hyp{}\emph{yi}\hyp{}AB is due to their phonological length and not their grammaticality.
+The reason for this degradedness is probably phonological, since AB-\emph{yi}-AB and AB-\emph{le}-\emph{yi}-AB contain too many syllables \citetext{\citealp[274]{Fan1964}, \citealp[143]{Sui2018}, \citealp[239]{YangWei2017}, \citealp[15]{Zhang2000}}, but we argue that it is not an issue of grammaticality.
 Thus, they can still be produced via the lexical rules posited above, but are ruled out or degraded due to a general phonological constraint.
 
 
 AAB, A-\emph{yi}-AB, A-\emph{le}-AB, AA-\emph{kan} and A-\emph{kan}-\emph{kan} can also be accounted for by the lexical rules proposed in this section.
-They can be analyzed as compounds out of a reduplicated monosyllabic verb and another element.
+They can be analyzed as compounds consisting of a reduplicated monosyllabic verb and another element.
 Specifically, AAB, A-\emph{yi}-AB and A-\emph{le}-AB can be considered as the compound of a reduplicated monosyllabic verb (A) and a noun (B).\footnote{
 \citet{Huang1984} and \citet{Her1996, Her2010} argued that some of this kind of structures are compounds, some are phrases, and some have dual status (both compounds and phrases).
 Following this approach, AAB, A-\emph{yi}-AB and A-\emph{le}-AB can (also) be considered as the phrasal combination of a reduplicated verb and its object.
 }
 AA-\emph{kan} can be regarded as the compound of a reduplicated monosyllabic verb (A) and the verb \emph{kan} `look',
 whereas A-\emph{kan}-\emph{kan} is the compound of a monosyllabic verb (A) and the reduplication of \emph{kan} `look'.
-A-\emph{yi}-A-\emph{kan} is also possible, although rare, presumably due to its length as well.
+A-\emph{yi}-A-\emph{kan} is also possible, though rare, presumably also due to its length.
 An inquiry in CCL found 55 hits of A-\emph{yi}-A-\emph{kan}.
 A sample is listed in (\ref{ex:AyiAkan}).
 
@@ -1318,7 +1323,7 @@ A sample is listed in (\ref{ex:AyiAkan}).
   \ex
   \gll furen ni dao \textbf{shu-yi-shu-kan}, zhe zhu hua de huaduo gong you ji zhong yanse.\\
   madam you just count-one-count-look this \textsc{clf} flower \textsc{de} blossom in.total have how.many \textsc{clf} color\\ \jambox{(CCL)}
-  \glt `Madam, just try to count and see how many color does the blossom of this flower have in total.'
+  \glt `Madam, just try to count and see how many colors the blossom of this flower has in total.'
   \z
 \z
 Due to the prominent tentative, trying meaning of AA-\emph{kan} and A-\emph{kan}-\emph{kan}, they are not compatible with the perfective aspect marker \emph{le} semantically,
@@ -1329,11 +1334,11 @@ The current analysis provides a unified account for all forms of delimitative ve
 Like in \citet{FanSongBond2015}, \emph{yi} is handled as a phonological element which does not make any contribution to the semantics,
  and an inheritance hierarchy is used to capture the commonalities among different forms of reduplication.
 But the present proposal also reflects the connection between the reduplication and aspect marking via multiple inheritance.
-This account makes use of a semantic mechanism, which correctly rules out the aspect marking other than \emph{le}.
+This account makes use of a semantic mechanism, which correctly rules out aspect marking with forms other than \emph{le}.
 By providing a semantic explanation, this mechanism seems less \emph{ad hoc} than the one used in \citet{FanSongBond2015}, which simply assumed that the reduplication cannot combine with aspect information.
-The present approach also has a broader coverage of the forms of verbal reduplication than \citet{FanSongBond2015}.
-Furthermore, all the forms are derivable from the lexical rules proposed here, so that there is no need to resort to irregular lexicon entries, and the productivity of these forms are correctly captured.
-In sum, the analysis proposed in this paper seems to possess greater explanatory power and resolves the problems of previous studies.
+The present approach also has a broader coverage of the forms of verbal reduplication than the one in \citet{FanSongBond2015}.
+Furthermore, all the forms are derivable from the lexical rules proposed here, so that there is no need to resort to irregular lexicon entries, and the productivity of these forms is correctly captured.
+In sum, the analysis proposed in this paper possesses greater explanatory power and resolves the problems of previous studies.
 
 
 %%%%%%%%%%%
@@ -1341,10 +1346,10 @@ In sum, the analysis proposed in this paper seems to possess greater explanatory
 \section{Conclusion}
 
 The current study provides an HPSG account for verbal reduplication in Mandarin Chinese.
-We presented empirical evidence that the reduplication is possible with all \emph{Aktionsarten}.
-We gave a semantic explanation for the incompatibility of the reduplication with aspect markers other than \emph{le}.
-We  argued that the reduplication is a morphological rather than a syntactic process.
-We modeled the reduplication as a lexical rule
+We presented empirical evidence that reduplication is possible with all \emph{Aktionsarten}.
+We gave a semantic explanation for the incompatibility of reduplication with aspect markers other than \emph{le}.
+We argued that reduplication is a morphological rather than a syntactic process.
+We modeled reduplication as a lexical rule,
 and the different forms of reduplication are captured in an inheritance hierarchy using underspecified lists.
 The interaction between verbal reduplication and aspect marking is handled by multiple inheritance.
 This analysis is compatible with both mono- and disyllabic verbs, 
