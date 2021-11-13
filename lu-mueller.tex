@@ -321,7 +321,7 @@ Verbal reduplication in Mandarin Chinese takes the forms listed  in (\ref{ex:red
 		\ex \gll lai-lai-wang-wang\\
 		come-come-go-go\\ \jambox{AABB}
 		\z
-	\ex\label{ex:forms-VO} for V-O compounds: \emph{chang-ge} sing-song `sing'\\
+	\ex\label{ex:forms-VO} for Verb-Object (V-O) compounds: \emph{chang-ge} sing-song `sing'\\
 		\ea \gll chang-chang-ge\\
 		sing-sing-song\\ \jambox{AAB}
 		\ex \gll chang-yi-chang-ge\\
@@ -561,12 +561,12 @@ The first syntactic test is phrasal extension, namely the addition of optional e
 If the unit is a phrase, then optional elements that may appear in phrases should be able to be added into it.
 And subparts of a phrase should be able to be modified separately. 
 If the unit is a word, however, then neither of these should be possible.
-As illustrated in (\ref{ex:redup-forms}) in Section~\ref{ch:intro}, the reduplication can only be separated by \emph{le} and \emph{yi}, but the word status of these elements cannot be easily defined.
+As illustrated in (\ref{ex:redup-forms}) in Section~\ref{ch:intro}, the base verb and its reduplicant can only be separated by \emph{le} and \emph{yi}, but the word status of these elements cannot be easily defined.
 We mentioned above that whether aspect markers like \emph{le} are considered to be morphological or syntactic elements depends on the theoretical framework (and possibly the target language).
 And the status of \emph{yi} is unclear.
 Turning to the second part of this test, separate modification, we see that elements in the reduplication cannot be modified individually. 
 Compared to (\ref{ex:ext-redup1}), where the adverbial \emph{qingsheng de} `quietly' modifies the whole reduplication, (\ref{ex:ext-redup2}) is ungrammatical, 
-as the adverbial cannot modify the second element in the reduplication alone.
+as the adverbial cannot modify the reduplicant alone.
 All in all, by the test of phrasal extension, reduplications behave more like words than like phrases.
 
 \setlength{\columnsep}{-10pt}
@@ -612,7 +612,7 @@ and not for coordinated words \citetext{\citealp[137]{Duanmu1998}; \citealp[283]
 For the reduplication, conjunction reduction does not seem to be possible. 
 In (\ref{ex:co-redup1}), the reduplication \emph{jiao-jiao} `chew a little bit' is coordinated with a simple verb \emph{mo} `apply' together with the adverbial \emph{yidian} `a little bit'.
 Without the adverbial \emph{yidian} `a little bit', \emph{mo} `apply' by itself cannot express the additional `a little bit' meaning, even when it is coordinated with a reduplicated verb.
-Similarly, in (\ref{ex:co-redup2}), the reduplication \emph{kan-le-kan} `look a little bit' is coordinated with the predicate \emph{zou-le chulai} `walked out'. The verb in the latter case is not reduplicated, and it cannot express the delimitative meaning either.
+Similarly, in (\ref{ex:co-redup2}), the reduplication \emph{kan-le-kan} `looked a little bit' is coordinated with the predicate \emph{zou-le chulai} `walked out'. The verb in the latter case is not reduplicated, and it cannot express the delimitative meaning either.
 Once again, this criterion suggests that reduplications do not have this expected property of phrases.
 
 \ea
@@ -646,7 +646,7 @@ and those that postulate a special reduplication structure.
 
 \citet{Chao1968}, \citet{Fan1964} and \citet{Xiong2016} analyzed the reduplicant in Mandarin Chinese
 as a verbal classifier. 
-A verbal classifier is ``a measure for verbs of action expresses the number of times an action takes place” \citep[615]{Chao1968}.
+A verbal classifier is a measure for verbs of action that ``expresses the number of times an action takes place” \citep[615]{Chao1968}.
 In this analysis, the first element in the reduplication is the actual verb, 
 the second element is a verbal classifier borrowed from the verb, 
 and \emph{yi} `one' is an optional pseudo-numeral that only has an abstract `a little bit' meaning.
@@ -869,7 +869,7 @@ The shortcomings of previous analyses lead us to propose a new HPSG analysis of 
 \section{A new HPSG analysis}\label{ch:HPSG-redup}
 
 In what follows, we suggest a new lexical-rule-based analysis of aspect marking and reduplication
-using Minimal Recursion Semantics as the semantic representation formalism \citep{CFPS2005a}.
+using Minimal Recursion Semantics (MRS) as the semantic representation formalism \citep{CFPS2005a}.
 
 The implicational constraint in  (\ref{avm:redup}) shows the constraints on all structures of type
 \emph{verbal-reduplication-lr} for Mandarin Chinese. Such structures take a verb as \textsc{lex-dtr}.  
@@ -877,7 +877,7 @@ The output reduplicates the phonology of the input verb with the possibility to 
 \etag{} indicates an underspecified list which could be empty or not. A delimitative relation is
 appended to the \textsc{rels} value of the input verb, and it takes the event index of the input verb
 as argument. The label of the output \iboxb{2} is identified with the label of the input and with the label of
-the deliminitive relation, hence \type{deliminitive-rel} is treated as a modifier. Further relations can be added at the beginning of the \textsc{rels} list to allow for
+the delimitative relation, hence \type{delimitative-rel} is treated as a modifier. Further relations can be added at the beginning of the \textsc{rels} list to allow for
 the additional perfective meaning in A-\emph{le}-A and A-\emph{le}-\emph{yi}-A. 
 The combination with the perfective will be elaborated on in the following paragraphs.
 
@@ -994,7 +994,7 @@ specified in (\mex{0}) again.
 As subtypes of \type{ver\-bal\hyp{}re\-dup\-li\-ca\-tion\hyp{}lr} illustrated in (\ref{avm:redup}), 
 both inherit the constraints on the \textsc{lex-dtr} and on the semantics of the output, 
 and because of (\mex{0}), no extra material is appended to the \textsc{rels} value of the input verb
-and the list containing the \type{deliminitive-rel}. In addition to the inherited constraints,
+and the list containing the \type{delimitative-rel}. In addition to the inherited constraints,
 \type{aa-lr} and \type{a-yi-a-lr} specify the phonology of the output differently.
 \type{aa-lr} determines that the \etag between the two phonological copies in (\ref{avm:redup}) is empty, 
 whereas \type{a-yi-a-lr} specifies this list of phonological material as \phonliste{ yi }:
@@ -1164,7 +1164,7 @@ The \textsc{phon} value of the output reduplicates the phonology of the input ve
 The \textsc{rels} list of the output appends the \type{delimitative-rel} to the \type{perfective-rel} and the \textsc{rels} value of the input verb.
 The arguments of both \type{perfective-rel} and \type{delimitative-rel} share the event index of the
 input verb \iboxb{3} to ensure that they apply to the same event denoted by the input verb. The
-label of the \type{deliminative-rel} and the input verb are identified (\type{deliminitive-rel} is a
+label of the \type{delimitative-rel} and the input verb are identified (\type{delimitative-rel} is a
 modifier) and this shared label is embedded under the \type{perfective-rel}.
 
 \ea\label{avm:pfv-redup}
@@ -1196,9 +1196,9 @@ lex-dtr & [phon & \1\\
 For example (\ref{ex-he-tasted-the-soup-a-little-bit}), we get the following MRS representation,
 where h1 and h2 correspond to the handles \ibox{2} and \ibox{4} and e1 to the event variable \ibox{3}:
 \ea
-h1 \sliste{ h1:perfective(e1,h2), h2:taste(e1,he,soup), h2:deliminative(e1) }
+h1 \sliste{ h1:perfective(e1,h2), h2:taste(e1,he,soup), h2:delimitative(e1) }
 \z
-So the deliminitive relation is treated as an adjunct to the main relation of the verb, and the
+So the delimitative relation is treated as an adjunct to the main relation of the verb, and the
 perfective relation scopes over both the main relation and the delimitative relation.
 
 Two subtypes of \type{perfective-reduplication-lr} are posited:
@@ -1283,7 +1283,7 @@ Indeed, a few examples of AB-\emph{yi}-AB and AB-\emph{le}-\emph{yi}-AB were fou
  \ex\label{ex:AByiAB-li}
  \gll feichang yansu de ba jinshi yanjing \textbf{duanzheng-le-yi-duanzheng}.\footnotemark\\
  very seriously \textsc{de} \textsc{ba} nearsighted glasses straighten-\textsc{pfv}-one-straighten\\
- \glt `Very seriously put the nearsighted glasses straight quickly.'
+ \glt `[He] very seriously straightened the nearsighted glasses quickly.'
  
  \ex\label{ex:ABleyiAB-ccl}
  \gll jiduo sanluan-zhe de chuan li de dengguang, ye huyinhumie de \textbf{bianhuan-le-yi-bianhuan} weizhi.\\
