@@ -272,11 +272,11 @@ Thus, verbal reduplication in Mandarin Chinese is often translated as doing some
 The current study tries to determine a suitable formal and unified analysis for the structure of verbal reduplication in Mandarin Chinese.
 It provides a novel HPSG analysis of this phenomenon and avoids the problems of previous approaches.
 
-We will present in Section \ref{ch:phen} the forms and syntactic distribution as well as the semantics of verbal reduplication in Mandarin Chinese. 
+We will present in Section~\ref{ch:phen} the forms and syntactic distribution as well as the semantics of verbal reduplication in Mandarin Chinese. 
 Importantly, we restrict the object of this study to the AA, A-\emph{yi}-A, A-\emph{le}-A, A-\emph{le}-\emph{yi}-A, ABAB and AB-\emph{le}-AB forms (these templates will be illustrated below).
 We will also discuss in this section, with the help of corpus data, the question of whether the reduplication is a morphological or a syntactic process.
-In Section \ref{ch:prev}, we will discuss the advantages and drawbacks of previous approaches. 
-Finally, in Section \ref{ch:HPSG-redup}, we will present a new HPSG account for verbal reduplication in Mandarin Chinese.
+In Section~\ref{ch:prev}, we will discuss the advantages and drawbacks of previous approaches. 
+Finally, in Section~\ref{ch:HPSG-redup}, we will present a new HPSG account for verbal reduplication in Mandarin Chinese.
 
 The data in this paper was drawn from several sources.
 In addition to introspection, the Modern Chinese subcorpus of the corpus of the \emph{Center for Chinese Linguistics of Peking University} (CCL) \citep{Zhanetal2003, Zhanetal2019} was consulted. 
@@ -343,7 +343,7 @@ In what follows, the term \emph{reduplication} will be used to refer specificall
 %%%%% not in a footnote that people might skip and then become confused.
 
 The reduplication has a similar syntactic distribution to an unreduplicated verb. 
-The reduplication cannot be aspect-marked, though, except with the perfective aspect marker \emph{le} (for further discussion, see Section \ref{sec:aspM}). 
+The reduplication cannot be aspect-marked, though, except with the perfective aspect marker \emph{le} (for further discussion, see Section~\ref{sec:aspM}). 
 The reduplication is incompatible with an expression that quantifies the duration or the extent of the event expressed in the sentence, as in (\ref{ex:redup-quan}) \citetext{\citealp[114--115]{Chen2005}; \citealp[83--84]{Li1998}}.
 This is probably because the reduplication already contains a quantity meaning \citetext{\citealp[114--115]{Chen2005}; \citealp[84]{Li1998}}.
 
@@ -535,7 +535,7 @@ While AA and ABAB are highly productive, AABB shows low productivity.
 The output of AA and ABAB does not change the grammatical category of the input (verb), but the output of AABB could have other categories such as adverb or adjective.
 AA and ABAB do not change the valency of the input verb, but AABB makes a transitive verb intransitive. 
 The two groups also have different input and output constraints. 
-\citet{Xie2020} claimed that only dynamic and volitional verbs can undergo AA or ABAB reduplication (but see Section \ref{sec:Aktionsarten}).
+\citet{Xie2020} claimed that only dynamic and volitional verbs can undergo AA or ABAB reduplication (but see Section~\ref{sec:Aktionsarten}).
 On the other hand, AABB requires its input to be a complex verb whose constituents are either synonymous, antonymous or logically coordinated. 
 Moreover, the output of AABB has an increasing meaning, i.e. an event happens repeatedly or continuously, as opposed to the delimitative meaning of AA and ABAB.
 
@@ -851,7 +851,7 @@ Nevertheless, this analysis has some shortcomings.
 To begin with, since the combination with aspect markers is completely forbidden, it is impossible for this approach to account for A-\emph{le}-A.
 Moreover, as verbal reduplication is  considered to express a delimitative aspectual meaning,
 it seems unconvincing to assume that there is no aspect information in its semantics.
-We consider a semantic explanation as described in Section \ref{sec:aspM} to be more reasonable for ruling out aspect markers other than \emph{le}.
+We consider a semantic explanation as described in Section~\ref{sec:aspM} to be more reasonable for ruling out aspect markers other than \emph{le}.
 Furthermore, this account can only deal with monosyllabic reduplication and handles ABAB and AAB as irregular forms, for the reason that ABAB and AAB reduplication of AB verbs is supposedly ``not very productive in Chinese'' \citep[102]{FanSongBond2015}.
 However, this is not true. 
 \citet{BascianoMelloni2017}, \citet{MelloniBasciano2018},  \citet{Xie2020}  and \citet{Xing2000stat} all considered both AA and ABAB to be productive, 
@@ -1213,8 +1213,8 @@ Specifically, \type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} specifies the middle phono
 \begin{tabular}{@{}l@{\hspace{2cm}}l@{}}
 \scalebox{.9}{%
 \avm{
-[\type*{a-le-a-lr}\\
-phon & \1 \+ \phonliste{ le } \+ \1\\
+[\type*{a-le-yi-a-lr}\\
+phon & \1 \+ \phonliste{ le, yi } \+ \1\\
 lex-dtr & [phon & \1
                 ]
 ]
@@ -1357,6 +1357,10 @@ so that all productive forms of reduplication are derivable by lexical rules.
 
 The analysis is implemented as part of the CoreGram project \citep{MuellerCoreGram} in a Chinese
 grammar in the TRALE system \citep*{MPR2002a-u,Penn2004a-u}.
+
+\section{Acknowledgements}
+
+We want to thank Elizabeth Pankratz for comments on an earlier version of this paper.
 
 
 \renewrobustcmd{\disambiguate}[3]{#1}
